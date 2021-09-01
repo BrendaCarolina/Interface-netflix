@@ -1,0 +1,42 @@
+:root{  /* utilização de variáveis dentro do css3. O root é a raiz do elemento. Ajuda pra quando o site tiver poucas cores e você já sabe quais são. Como é o caso da netflix q tem o preto e o vermelho predominantemente */ 
+    --vermelho: #e50914;
+    --preta: #141414;
+
+}
+
+*{  /* Esse "*" representa que as configurações abaixo servem pra todo o site em qualquer navegador */ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*define um limite de espaço no q ta sendo escrito pra q não ultrapasse o que vc já definiu. No caso se o tamanho definido foi de 400px, os itens de dentro se espremem mas não saem para fora. A caixa (box) é definida no hmtl com uma class */ 
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+header .container{  /*ajuste do alinhamento do menu */ 
+    margin-left: 10px;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /*cria um espaço entre a tag h2 e a tag nav */ 
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px; 
+}
+
+header nav a{   /*menu*/ 
+    text-decoration: none;  /*ficar sem o link padrão do href (html) */ 
+    color: #aaa;  /*cor do menu */
+    margin-right: 10px;  /*espaçamento entre as palavras */ 
+    
+}
+
+header nav a:hover{  /*mudança da cor ao passar o mouse em cima da palavra/link/menu */ 
+    color: #fff;
+}
