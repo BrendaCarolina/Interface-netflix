@@ -13,13 +13,13 @@
 body{
     background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
+    color: white; 
     
 }
 
 header .container{  /*ajuste do alinhamento do menu */ 
-    margin-left: 10px;
-    display: flex; 
-    flex-direction: row;
+    display: flex;
+    flex-direction:row;
     align-items: center;
     justify-content: space-between; /*cria um espaço entre a tag h2 e a tag nav */ 
 }
@@ -28,15 +28,38 @@ header .logo{
     color: var(--vermelho);
     font-family: 'Arial Black', Times;
     font-size: 40px; 
+    
 }
 
 header nav a{   /*menu*/ 
     text-decoration: none;  /*ficar sem o link padrão do href (html) */ 
     color: #aaa;  /*cor do menu */
-    margin-right: 10px;  /*espaçamento entre as palavras */ 
+    margin-right: 12px;  /*espaçamento entre as palavras */ 
     
 }
 
 header nav a:hover{  /*mudança da cor ao passar o mouse em cima da palavra/link/menu */ 
     color: #fff;
+}
+
+/*edição do filme principal/capa*/ 
+
+.filme-principal{   /*edição da imagem */ 
+    font-size: 20px;
+    background: url('img/capa-b99.jpg'), linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%);  /*semi transparencia/tonalidade da cor de fundo da imagem. Melhora o contraste */ 
+    height: 700px;  
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;  /*vai seguir com base no display */ 
+    justify-content: center; /*vai seguir com base no flex direction */ 
+    align-items: flex-start; /*se refere ao alinhamento com base no que foi definido no flex direction. Nesse caso vai começar do lado esquerdo da tela com base em uma coluna */ 
+}
+
+.filme-principal .sinopse{  /*edição da parte definida em class html como sinopse dentro do filme-principal */ 
+    margin-bottom: 30px;
+}
+
+.titulo{
+    font-size: 60px;
 }
