@@ -46,7 +46,7 @@ header nav a:hover{  /*mudança da cor ao passar o mouse em cima da palavra/link
 
 .filme-principal{   /*edição da imagem */ 
     font-size: 20px;
-    background: url('img/capa-b99.jpg'), linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%);  /*semi transparencia/tonalidade da cor de fundo da imagem. Melhora o contraste */ 
+    background: url('img/capa2.jpg'), linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%);  /*semi transparencia/tonalidade da cor de fundo da imagem. Melhora o contraste */ 
     height: 700px;  
     background-size: cover;
     
@@ -57,9 +57,33 @@ header nav a:hover{  /*mudança da cor ao passar o mouse em cima da palavra/link
 }
 
 .filme-principal .sinopse{  /*edição da parte definida em class html como sinopse dentro do filme-principal */ 
+    margin-top: 10px;
     margin-bottom: 30px;
 }
 
-.titulo{
+.filme-principal .titulo{
+    margin-top: 15%;
     font-size: 60px;
+    font-family: 'Trebuchet MS', arial, sans-serif;
+}
+
+.botao{  /*vem com um padrão mas é possível mudar: */ 
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px; /*1º valor é pra altura e 2º valor pra largura */ /*se fosse só 1 valor, seria igual nos 4 cantos */ 
+    margin-right: 35px;
+    font-size: 15px;
+    cursor: pointer; /*como o ponteiro do mouse fica ao passar em cima do elemento */
+    transition: .3s ease all; /*cuida da transição entre uma animação e outra */ 
+}
+
+.botao:hover{   
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
 }
