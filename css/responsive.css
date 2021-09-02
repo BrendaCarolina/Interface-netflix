@@ -1,0 +1,19 @@
+@media screen and (max-width:700px){ /*responsividade. O 700px é eu dizendo pro site que até isso é preciso aplicar as configurações abaixo */ 
+    header .container{  /*aqui ele fala sobre o menu em cima + nome "Netflix" */ 
+        display:flex;
+        flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 15px;
+        width: 300px;
+        
+    }
+
+}
+
+@media screen and (min-width: 400px){
+    .sinopse{
+        width: 90%;        
+    }
+}

@@ -12,7 +12,7 @@
 
 body{
     background: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white; 
     
 }
@@ -59,13 +59,14 @@ header nav a:hover{  /*mudança da cor ao passar o mouse em cima da palavra/link
 }
 
 .filme-principal .sinopse{  /*edição da parte definida em class html como sinopse dentro do filme-principal */ 
-    margin-top: 25px;
-    margin-bottom: 90px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    
 }
 
 .filme-principal .titulo{
-    margin:0; 
-    font-size: 60px;
+    margin-bottom: 20px; 
+    font-size: 50px;
     font-family: 'Trebuchet MS', arial, sans-serif;
 }
 
@@ -74,9 +75,9 @@ header nav a:hover{  /*mudança da cor ao passar o mouse em cima da palavra/link
     border: none;
     color: white;
 
-    padding: 15px 20px; /*1º valor é pra altura e 2º valor pra largura */ /*se fosse só 1 valor, seria igual nos 4 cantos */ 
+    padding: 20px 20px; /*1º valor é pra altura e 2º valor pra largura */ /*se fosse só 1 valor, seria igual nos 4 cantos */ 
     
-    margin-bottom: 150px;
+    margin-bottom: 20px;
     margin-right: 35px;
     font-size: 15px;
     cursor: pointer; /*como o ponteiro do mouse fica ao passar em cima do elemento */
@@ -107,3 +108,6 @@ header nav a:hover{  /*mudança da cor ao passar o mouse em cima da palavra/link
     display: block;
 }
 
+.carrosel-filmes{
+    margin-top: 5px;
+}
