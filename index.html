@@ -5,7 +5,10 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='main.js'></script> 
+    <!--Owl css (jQuery)--> 
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+
     <title>Netflix Clone</title>
 </head>
 <body>
@@ -27,7 +30,7 @@
         <div class="filme-principal"> <!--Div principal.Chamada de "pai"-->
             <div class="container">  <!--Div secundária.Chamada de "filha" pois está dentro do pai-->
                 <h3 class="titulo">BROOKLYN 99</h3>
-                <p class="sinopse"><b>O brilhante e imaturo detetive Jake Peralta precisa aprender a seguir as regras e trabalhar em equipe<br> quando um capitão exigente assume o comando de seu esquadrão.</b></p>
+                <p class="sinopse"><b>O brilhante e imaturo detetive Jake Peralta precisa aprender a seguir as regras e trabalhar em equipe quando um capitão exigente assume o comando de seu esquadrão.</b></p>
                 <div class="botoes"> <!--Div secundária.Chamada de "filha2" pois está dentro do pai. Essa classificação serve pra na hora que for no CSS, mudar os elementos individualmente(filhas diferente do pai) em algumas coisas e ao mesmo tempo abranger as filhas com as configurações do pai-->
                 <button role="button" class="botao"> 
                     <!--ícone pego no site após colar a url do js abaixo-->
@@ -44,8 +47,48 @@
 
 
     </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini2.jpg" alt="" srcset="">
+            </div> 
+            <div class="item">
+                <img class="box-filme" src="img/mini3.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini4.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini6.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini8.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini9.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="" srcset="">
+            </div>
+
+        </div>
+    </div>
     <!--url dentro do js para colocar icones-->
     <script src="https://kit.fontawesome.com/271cdf3606.js"></script>
+    <!--jQuery = framework-->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script> 
     
 </body>
 </html>
